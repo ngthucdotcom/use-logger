@@ -15,11 +15,7 @@ enum LoggerLevel {
  * @param dateTimeFormat: optional, default YYYY-MM-DD HH:mm:ss, display in console or same
  * @returns: this function will return void function to input log
  */
-export const useLogger = (className = '', dateTimeFormat = 'YYYY-MM-DD HH:mm:ss'): {
-	log_info: (rawData: any, options?: any) => void;
-	log_warn: (rawData: any, options?: any) => void;
-	log_error: (rawData: any, options?: any) => void
-} => {
+const useLogger = (className = '', dateTimeFormat = 'YYYY-MM-DD HH:mm:ss') => {
 
 	/**
 	 * A function to make color log by log level
@@ -100,3 +96,5 @@ export const useLogger = (className = '', dateTimeFormat = 'YYYY-MM-DD HH:mm:ss'
 		log_error: log_error
 	};
 }
+
+export default useLogger;

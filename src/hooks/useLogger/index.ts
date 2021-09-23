@@ -94,5 +94,9 @@ export const useLogger = (className = '', dateTimeFormat = 'YYYY-MM-DD HH:mm:ss'
 		writeLog(LoggerLevel.ERROR, rawData, options);
 	}
 
-	return { log_info, log_warn, log_error };
+	return {
+		log_info : log_info,
+		log_warn : log_warn,
+		log_error: log_error
+	};
 }

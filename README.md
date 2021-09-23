@@ -5,13 +5,13 @@ useLogger hook for React.js
 
 ### Install package
 ```
- npm i --save-dev @ngthuc/use-logger
+ npm i --save-dev use-logger
 ```
 
 ### Use package
 * Import to component
 ```
- import {useLogger} from "@ngthuc/use-logger";
+ import {useLogger} from "use-logger";
 ```
 
 * Init class/function/component name for every component

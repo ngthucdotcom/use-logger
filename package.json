@@ -13,7 +13,8 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "publish": "npm publish --access public"
+    "publish-major": "npm version major && npm publish --access public",
+    "publish-minor": "npm version minor && npm publish --access public"
   },
   "peerDependencies": {
     "react": ">= 16.8.0",

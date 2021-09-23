@@ -1,5 +1,5 @@
 {
-  "name": "@types/use-logger",
+  "name": "use-logger",
   "version": "3.0.0",
   "description": "useLogger hook for React.js",
   "author": "ngthuc",

@@ -1,8 +1,15 @@
 {
-  "name": "basic-logger",
+  "name": "@ngthuc/use-logger",
   "version": "1.0.0",
-  "description": "Basic Logger for Javascript",
+  "description": "useLogger hook for React.js",
+  "author": "ngthuc",
+  "license": "MIT",
+  "repository": "ngthuc/use-logger",
   "main": "dist/index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
@@ -26,11 +33,6 @@
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0"
   },
-  "dependencies": {
-    "dotenv": "^9.0.0",
-    "moment": "^2.29.1",
-    "rollup-plugin-typescript2": "^0.30.0"
-  },
   "devDependencies": {
     "@types/node": "^16.9.1",
     "rimraf": "^3.0.2",
@@ -49,30 +51,29 @@
     "react-dom": "^16.12.0",
     "react-test-renderer": "^16.13.1",
     "rollup-plugin-sass": "^1.2.2",
-    "rollup-plugin-typescript2": "^0.25.3",
+    "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-uglify": "^6.0.4",
     "ts-jest": "^26.1.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://thucln: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@github.com/ngthucdotcom/basic-logger.git"
+  "dependencies": {
+    "dotenv": "^9.0.0",
+    "moment": "^2.29.1",
+    "rollup-plugin-typescript2": "^0.30.0"
   },
+  "files": [
+    "dist"
+  ]
   "keywords": [
-    "logger",
     "ngthucdotcom",
     "ngthuc",
-    "basic",
-    "logger",
-    "log4js"
+    "useLogger",
+    "react",
+    "react hooks",
+    "typescript",
+    "npm"
   ],
-  "author": "ngthuc",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ngthucdotcom/basic-logger/issues"
+    "url": "https://github.com/ngthucdotcom/use-logger/issues"
   },
-  "homepage": "https://github.com/ngthucdotcom/basic-logger#readme",
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ]
+  "homepage": "https://github.com/ngthucdotcom/use-logger#readme"
 }

@@ -4,7 +4,7 @@
   "description": "useLogger hook for React.js",
   "author": "ngthuc",
   "license": "MIT",
-  "repository": "ngthuc/use-logger",
+  "repository": "ngthucdotcom/use-logger",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",

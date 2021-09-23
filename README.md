@@ -1,6 +1,35 @@
 # use-logger
 useLogger hook for React.js
 
+## Usage
+
+### Install package
+```
+ npm i --save-dev @ngthuc/use-logger
+```
+
+### Use package
+* Import to component
+```
+ import {useLogger} from "@ngthuc/use-logger";
+```
+
+* Init class/function/component name for every component
+```
+ const logger = useLogger(<app-name>);
+```
+
+* Write log with type info | warning | error
+```
+ logger.log_info(data, options);
+```
+```
+ logger.log_warn(data, options);
+```
+```
+ logger.log_error(data, options);
+```
+
 ## Development commands
 
 ```

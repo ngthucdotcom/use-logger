@@ -12,22 +12,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w",
-    "test": "jest"
-  },
-  "jest": {
-    "transform": {
-      ".(ts|tsx)": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "modulePathIgnorePatterns": [
-      "<rootDir>/dist/"
-    ]
+    "start": "rollup -c -w"
   },
   "peerDependencies": {
     "react": ">= 16.8.0",
@@ -62,7 +47,7 @@
   },
   "files": [
     "dist"
-  ]
+  ],
   "keywords": [
     "ngthucdotcom",
     "ngthuc",

@@ -1,5 +1,5 @@
 {
-  "name": "@ngthuc/use-logger",
+  "name": "@typescript/use-logger",
   "version": "2.2.3",
   "description": "useLogger hook for React.js",
   "author": "ngthuc",

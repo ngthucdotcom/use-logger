@@ -1,7 +1,5 @@
 const moment = require("moment");
 
-const env = process.env.REACT_APP_ENV;
-
 enum LoggerLevel {
 	'INFO' = 'INFO',
 	'WARN' = 'WARN',
@@ -13,13 +11,10 @@ enum LoggerLevel {
  * To usage, please init variable(s) className and dateTimeFormat (optional)
  * @param className: input used class name or function name or any thing call this function
  * @param dateTimeFormat: optional, default YYYY-MM-DD HH:mm:ss, display in console or same
+ * @param environment
  * @returns: this function will return void function to input log
  */
-export const useLogger = (className = '', dateTimeFormat = 'YYYY-MM-DD HH:mm:ss'): {
-	log_info: (rawData: any, options?: any) => void;
-	log_warn: (rawData: any, options?: any) => void;
-	log_error: (rawData: any, options?: any) => void
-} => {
+export const useLogger = ({className = '', environment = 'local', dateTimeFormat = 'YYYY-MM-DD HH:mm:ss'}) => {
 
 	/**
 	 * A function to make color log by log level
@@ -61,7 +56,7 @@ export const useLogger = (className = '', dateTimeFormat = 'YYYY-MM-DD HH:mm:ss'
 	 * @param options
 	 */
 	const writeLog = (level: LoggerLevel, data: any, options: any = null): void => {
-		if (env === "production") {
+		if (environment === "production") {
 			if (level === LoggerLevel.ERROR) {
 				buildLog(className.toUpperCase(), LoggerLevel.ERROR, data, options);
 			}
